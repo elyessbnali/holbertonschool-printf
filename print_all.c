@@ -6,7 +6,7 @@
  */
 int (*print_all(const char ch))(va_list)
 {
-	int kk = 0;
+	int ELYESS = 0;
 
 	list_t printf[] = {
 		{'c', print_character},
@@ -15,13 +15,13 @@ int (*print_all(const char ch))(va_list)
 		{'i', print_integer},
 		{'\0', NULL}};
 
-	while (printf[kk].specifiers != '\0')
+	while (printf[ELYESS].specifiers != '\0')
 	{
-		if (ch == (printf[kk].specifiers))
+		if (ch == (printf[ELYESS].specifiers))
 		{
-			return (printf[kk].f);
+			return (printf[ELYESS].f);
 		}
-		kk++;
+		ELYESS++;
 	}
 	return (0);
 }
